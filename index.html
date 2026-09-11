@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font ni Reiy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <div class="brand-mark"><i class="fas fa-wand-magic-sparkles"></i></div>
+                <div>
+                    <p class="eyebrow">Font Changer</p>
+                    <h1 class="header-title">Facebook font changer</h1>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="hero-copy">
+                <h2>Style now!</h2>
+                <p>Tutorial is listed below.</p>
+            </section>
+
+            <div class="unicode-editor-container">
+                <div class="editor-toolbar">
+                    <label class="style-field" for="fontStyleSelector">
+                        <span>Choose a style</span>
+                        <select id="fontStyleSelector" class="form-select"></select>
+                    </label>
+                    <button id="applyStyleButton" class="btn btn-primary">
+                        <i class="fas fa-paint-brush"></i> Apply Style
+                    </button>
+                    <button id="resetStyleButton" class="btn btn-outline-secondary">
+                        <i class="fas fa-eraser"></i> Reset
+                    </button>
+                </div>
+
+                <textarea id="unicodeEditor" class="form-control" rows="5"
+                    placeholder="Select a style, then start typing or paste your text here..."></textarea>
+                <div class="editor-hint"><i class="fas fa-circle-info"></i> Select existing text and choose <strong>Apply Style</strong>, or type directly with the selected style.</div>
+
+                <button id="copyToClipboardButton" class="btn btn-primary w-100 mt-3">
+                    <span class="copy-status">Copy Styled Text</span>
+                    <i class="fas fa-copy ms-2"></i>
+                </button>
+            </div>
+
+            <div class="guide-cards">
+                <section class="card-small">
+                    <div class="guide-icon"><i class="fas fa-list-check"></i></div>
+                    <h3>How to use</h3>
+                    <ol class="guide-list">
+                        <li><strong>Pick a style</strong><span>Choose bold, italic, small caps, monospace, or another option.</span></li>
+                        <li><strong>Write or paste</strong><span>Text converts as you type, and the editor grows with your message.</span></li>
+                        <li><strong>Style a selection</strong><span>Highlight any part of your text, select a style, then press Apply Style.</span></li>
+                        <li><strong>Copy and share</strong><span>Copy the result and paste it into Facebook, Messenger, captions, or comments.</span></li>
+                    </ol>
+                </section>
+                <section class="card-small tips-card">
+                    <div class="guide-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Helpful tips</h3>
+                    <ul class="tips-list">
+                        <li>Select all or CTRL-A to change all text into one font.</li>
+                        <li>You can select specific texts you want to change the font into or start using the font once selected.</li>
+                        <li>Use Reset to return selected text to regular characters.</li>
+                        <li>Some symbols may look different across devices and platforms.</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p class="footer-text">@reiy-git - support niyo ko please send kayo gcash, pm lang kayo sa fb ko [ Reiy Briones ]</p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
