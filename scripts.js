@@ -181,6 +181,7 @@ class FontConverter {
     }
 
     resetStyle(event) {
+        //here
         event.preventDefault();
 
         const editor = this.elements.editor;
