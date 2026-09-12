@@ -184,15 +184,12 @@ class FontConverter {
         event.preventDefault();
 
         const editor = this.elements.editor;
-        const { selectionStart, selectionEnd, value } = editor;
-        if (selectionStart === selectionEnd) return;
+        const { value } = editor;
 
-        const selectedText = value.slice(selectionStart, selectionEnd);
+        const selectedText = value;
         const plainText = normalizeStyledText(selectedText);
 
-        editor.value = value.slice(0, selectionStart) + plainText + value.slice(selectionEnd);
-        editor.selectionStart = selectionStart;
-        editor.selectionEnd = selectionStart + plainText.length;
+        editor.value = plainText;
         editor.focus();
         this.resizeEditor();
 
